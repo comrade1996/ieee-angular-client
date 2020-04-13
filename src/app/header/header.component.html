@@ -1,10 +1,10 @@
 <header style="
 background-image: url('../assets/img/header.png');" class="bg-cover bg-fixed bg-top text-white">
   <div class="container mx-auto px-6">
-    <nav class="flex flex-col py-2 md:flex-row md:items-center md:justify-between">
+    <!-- <nav class="flex flex-col py-2 md:flex-row md:items-center md:justify-between">
       <div class="flex justify-between items-center">
         <div>
-          <a class="text-2xl font-bold hover:text-blue-400 md:text-3xl" href="#">IEEE</a>
+          <a class="text-2xl font-bold hover:text-blue-400 md:text-3xl" routerLink="/header" routerLinkActive="active">IEEE</a>
         </div>
         <div class="md:hidden">
           <button (click)="isOpen = !isOpen" type="button" class="block focus:outline-none">
@@ -15,11 +15,13 @@ background-image: url('../assets/img/header.png');" class="bg-cover bg-fixed bg-
         </div>
       </div>
       <div class="flex flex-col md:-mx-4 md:flex-row" :class="isOpen ? 'block' : ['hidden' , 'md:block']">
-        <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#">Home</a>
-        <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#">Events</a>
-        <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" href="#">Volunteers</a>
+        <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/aboutus" routerLinkActive="active" >About Us</a>
+        <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/events" routerLinkActive="active">Events</a>
+        <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/volunteers" routerLinkActive="active">Volunteers</a>
+        <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/blog" routerLinkActive="active">Blog</a>
+        <a class="mt-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/contact" routerLinkActive="active">Contact Us</a>
       </div>
-    </nav>
+    </nav> -->
     <div class="flex items-center justify-center min-h-screen">
       <div class="max-w-lg text-center">
         <h1 class="text-3xl font-bold uppercase md:text-4xl">IEEE ANUSB <span class="text-blue-500">FAMILY</span></h1>

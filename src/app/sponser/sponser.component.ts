@@ -2,17 +2,17 @@ import { RequestsService } from './../requests.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-volunteers',
-  templateUrl: './volunteers.component.html',
+  selector: 'app-sponser',
+  templateUrl: './sponser.component.html',
   styles: []
 })
-export class VolunteersComponent implements OnInit {
+export class SponserComponent implements OnInit {
   data: Object;
 
   constructor(private service: RequestsService) { }
 
   ngOnInit() {
-    this.service.getData('volunteers')
+    this.service.getData('sponsers')
     .subscribe(response => {
       this.data = response;
       console.log(this.data);
