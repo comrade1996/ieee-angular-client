@@ -14,10 +14,11 @@ import { WebsiteComponent } from './website/website.component';
 import { ClickOutsideModule } from 'ng-click-outside';
 import { PostComponent } from './post/post.component';
 import { SponserComponent } from './sponser/sponser.component';
+import { SeriesComponent } from './series/series.component';
 
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, AboutusComponent, ContactComponent, EventsComponent, FooterComponent, VolunteersComponent, BlogComponent, WebsiteComponent, PostComponent, SponserComponent],
+  declarations: [AppComponent, HeaderComponent, AboutusComponent, ContactComponent, EventsComponent, FooterComponent, VolunteersComponent, BlogComponent, WebsiteComponent, PostComponent, SponserComponent, SeriesComponent],
   imports: [BrowserModule, HttpClientModule, ClickOutsideModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

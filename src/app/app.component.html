@@ -4,7 +4,7 @@
         <a class="text-2xl font-bold hover:text-blue-400 md:text-3xl" routerLink="/header" routerLinkActive="active">IEEE</a>
       </div>
       <div class="md:hidden">
-        <button (click)="isOpen = !isOpen" type="button" class="block focus:outline-none">
+        <button (click)="changeNavStatus()" type="button" class="block focus:outline-none">
           <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
             <path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
           </svg>
@@ -22,14 +22,14 @@
    -->
    <header style="
 background-color:#0a1d44;" class="bg-cover bg-fixed bg-top text-white">
-  <div (clickOutside)="onClickedOutside($event)" class="container mx-auto px-6">
+  <div (clickOutside)="onClickedOutsideNav($event)" class="container mx-auto px-6">
     <nav class="flex flex-col py-2 md:flex-row md:items-center md:justify-between">
       <div class="flex justify-between items-center">
         <div>
-          <a (click)="isOpen = !isOpen" class="text-2xl font-bold hover:text-blue-400 md:text-3xl" routerLink="/" routerLinkActive="active">IEEE</a>
+          <a (click)="changeNavStatus()" class="text-2xl font-bold hover:text-blue-400 md:text-3xl" routerLink="/" routerLinkActive="active">IEEE</a>
         </div>
         <div class="md:hidden">
-          <button (click)="isOpen = !isOpen" type="button" class="block focus:outline-none">
+          <button (click)="changeNavStatus()" type="button" class="block focus:outline-none">
             <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
               <path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
             </svg>
@@ -37,11 +37,12 @@ background-color:#0a1d44;" class="bg-cover bg-fixed bg-top text-white">
         </div>                                          
       </div>
       <div class="flex flex-col md:-mx-4 md:flex-row" [ngClass]="[ isOpen ? 'block' : 'hidden']">
-        <a (click)="isOpen = !isOpen"  class="mt-1 mr-1 ml-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/aboutus" routerLinkActive="active" >About Us</a>
-        <a (click)="isOpen = !isOpen" class="mt-1 mr-1 ml-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/events" routerLinkActive="active">Events</a>
-        <a (click)="isOpen = !isOpen" class="mt-1 mr-1 ml-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/volunteers" routerLinkActive="active">Volunteers</a>
-        <a (click)="isOpen = !isOpen" class="mt-1 mr-1 ml-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/blog" routerLinkActive="active">Blog</a>
-        <a (click)="isOpen = !isOpen" class="mt-1 mr-1 ml-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/contact" routerLinkActive="active">Contact Us</a>
+        <a (click)="changeNavStatus()"  class="mt-1 mr-1 ml-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/aboutus" routerLinkActive="active" >About Us</a>
+        <a (click)="changeNavStatus()" class="mt-1 mr-1 ml-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/events" routerLinkActive="active">Events</a>
+        <a (click)="changeNavStatus()" class="mt-1 mr-1 ml-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/volunteers" routerLinkActive="active">Volunteers</a>
+        <a (click)="changeNavStatus()" class="mt-1 mr-1 ml-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/blog" routerLinkActive="active">Blog</a>
+        <a (click)="changeNavStatus()" class="mt-1 mr-1 ml-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/series" routerLinkActive="active">KnowledgeTube</a>
+        <a (click)="changeNavStatus()" class="mt-1 mr-1 ml-1 text-sm hover:text-blue-400 md:mt-0 md:mx-4" routerLink="/contact" routerLinkActive="active">Contact Us</a>
       </div>
     </nav>
   </div>

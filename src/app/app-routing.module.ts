@@ -1,3 +1,4 @@
+import { SeriesComponent } from './series/series.component';
 import { WebsiteComponent } from './website/website.component';
 import { VolunteersComponent } from './volunteers/volunteers.component';
 import { HeaderComponent } from './header/header.component';
@@ -12,6 +13,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: 'blog', component: BlogComponent },
+  { path: 'series', component: SeriesComponent },
   { path: 'aboutus', component: AboutusComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'events', component: EventsComponent },
