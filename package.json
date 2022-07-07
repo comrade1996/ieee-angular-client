@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "~8.2.8",
     "@angular/router": "~8.2.8",
     "alpinejs": "^2.2.5",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "ng-click-outside": "^6.0.0",
     "ng-image-slider": "^2.4.1",
     "rxjs": "~6.4.0",
